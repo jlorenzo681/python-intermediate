@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Laptop",
+        "price": 999.99,
+        "quantity": 5,
+        "category": "Electronics"
+    },
+    {
+        "name": "Mouse",
+        "price": 25.5,
+        "quantity": 45,
+        "category": "Electronics"
+    },
+    {
+        "name": "Desk",
+        "price": 299.0,
+        "quantity": 10,
+        "category": "Furniture"
+    }
+]
