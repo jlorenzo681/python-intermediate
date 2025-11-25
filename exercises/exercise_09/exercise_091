@@ -1,0 +1,49 @@
+import json
+
+products = [{"name": "Laptop", "price": 999.99, "quantity": 5, "category": "Electronics"},
+            {"name": "Mouse", "price": 25.50, "quantity": 50, "category": "Electronics"},
+            {"name": "Desk", "price": 299.00, "quantity": 10, "category": "Furniture"}
+
+]
+
+print("Original products: ")
+for product in products:
+    print(product)
+
+
+filename = "inventory.json"
+try:
+    with open(filename, "w") as f:
+        json.dump(products, f, indent=4)
+    print(f"\nProducts save to {filename}")
+except IOError as e:
+    print(f'Error writing to file {e}')
+
+
+
+try:
+    with open(filename, "r") as f:
+        load_products = json.load(f)
+except (IOError, json.JSONDecodeError) as e:
+    print(f'Error reading file {e}')
+
+
+electronics = [p for p in load_products if p["category"] == "Electronics"]
+print("\nElectronics products: ")
+for p in electronics:
+    print(f'    {p["name"]}: ${p["price"]:.2f} ({p["quantity"]} in stock)')
+
+
+total_value = sum(p["price"] * p["quantity"] for p in load_products)
+print(f'\nTotal inventory value: ${total_value}')
+
+
+for p in load_products:
+        if p["name"] == "Mouse":
+            p["quantity"] = 45
+            print(f'\nUpdated Mouse quantity to {p["quantity"]}')
+
+
+with open(filename, "w") as f:
+    json.dump(load_products, f, indent=4)
+    print(f'Products updated in {filename}')
