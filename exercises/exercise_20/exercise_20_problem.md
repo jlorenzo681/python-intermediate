@@ -1,4 +1,4 @@
-# Exercise 20: SQLite Database Operations
+# Exercise 20: SQLite Database Operations NO
 
 **Difficulty:** Advanced
 

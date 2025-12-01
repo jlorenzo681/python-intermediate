@@ -1,4 +1,4 @@
-# Exercise 18: Iterators and the Iterator Protocol
+# Exercise 18: Iterators and the Iterator Protocol SI
 
 **Difficulty:** Advanced
 

@@ -1,4 +1,4 @@
-# Exercise 24: Data Pipeline with Generators
+# Exercise 24: Data Pipeline with Generators SI
 
 **Difficulty:** Advanced++
 

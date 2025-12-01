@@ -1,4 +1,4 @@
-# Exercise 25: Inventory Management System
+# Exercise 25: Inventory Management System NO
 
 **Difficulty:** Advanced+++
 

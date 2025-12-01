@@ -1,4 +1,4 @@
-# Exercise 15: Magic Methods (Dunder Methods)
+# Exercise 15: Magic Methods (Dunder Methods) NO
 
 **Difficulty:** Advanced
 

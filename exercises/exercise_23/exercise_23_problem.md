@@ -1,4 +1,4 @@
-# Exercise 23: Task Scheduler with SQLite
+# Exercise 23: Task Scheduler with SQLite NO
 
 **Difficulty:** Advanced++
 
